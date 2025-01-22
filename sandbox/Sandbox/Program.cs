@@ -4,42 +4,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        /*
-        The names of the variable
-        GOod stuff
-        */
+        
+        Movie favoriteMovie = new Movie();
+        favoriteMovie._title = "Star Wars";
+        favoriteMovie._year = 1977;
+        favoriteMovie._runtime = 150;
+        favoriteMovie._rating = "PG";
 
-        string adjName = GetAdjective();
-        string nounName = GetNoun();
+        Movie otherMovie = new Movie();
+        otherMovie._title = "Avatar";
+        otherMovie._year = 2009;
+        otherMovie._rating = "PG-13";
+        otherMovie._runtime = 162;
 
-        int number = Multiply(3, 4);
+        favoriteMovie.Display();
 
-        Console.WriteLine($"I looked out the window and saw {number} {adjName} {nounName}s!");
+        //DisplayMovie(favoriteMovie);
+        //DisplayMovie(otherMovie);
     }
-
-        static int Multiply(int number1, int number2)
+        /*
+        static void DisplayMovie(Movie aMovie)
         {
-            int product = number1 * number2;
-
-            return product;
+            Console.WriteLine($"{aMovie._title} - {aMovie._year}");
         }
-        static string GetAdjective()
-        {
-            List<string> words = new List<string>();
-            words.Add("Blue");
-            words.Add("Yellow");
-            words.Add("Big");
-            words.Add("Small");
-
-            string adjName = words[2];
-
-            return adjName;    
-        }
-
-        static string GetNoun()
-        {
-            string nounName = "bird";
-
-            return nounName;
-        }
+        /
+        */
 }
