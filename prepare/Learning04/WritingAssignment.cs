@@ -4,7 +4,8 @@ public class WritingAssignment : Assignment
 
 
 
-    public WritingAssignment(string studentName, string topic, string bookTitle) : base(studentName, topic)
+    public WritingAssignment(string studentName, string topic, string bookTitle) 
+    : base(studentName, topic)
     {
         _title = bookTitle;
     }

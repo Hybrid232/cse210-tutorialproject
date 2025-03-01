@@ -4,15 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Book bookInfo = new Book("Jurassic Park", "Michael Crichton");
-        Book bookInfo2 = new Book("Tom Soyer", "Mark Twain");
-        bookInfo.CheckOut();
         
-        Library theLib = new Library();
-        theLib.AddBook(bookInfo);
-        theLib.AddBook(bookInfo2);
-
-        theLib.DisplayCatalog();
     }
 
 
@@ -20,6 +12,15 @@ class Program
 
 
 
+        // Book bookInfo = new Book("Jurassic Park", "Michael Crichton");
+        // Book bookInfo2 = new Book("Tom Soyer", "Mark Twain");
+        // bookInfo.CheckOut();
+        
+        // Library theLib = new Library();
+        // theLib.AddBook(bookInfo);
+        // theLib.AddBook(bookInfo2);
+
+        // theLib.DisplayCatalog();
     //     Person p1 = new Person();
 
     //     p1.SetName("Jerry");
