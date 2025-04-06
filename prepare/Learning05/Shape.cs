@@ -21,6 +21,6 @@ public class Shape
 
     public virtual double GetArea()
     {
-        return -1;
+        return 0;
     }
 }
